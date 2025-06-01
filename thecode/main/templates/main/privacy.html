@@ -1,0 +1,56 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block nav %}
+    <ul>
+        <li><a href="{% url 'home' %}">Générateur</a></li>
+        <li><a href="{% url 'app' %}">Application</a></li>
+        <li><a href="{% url 'privacy' %}" class="active">Règles de confidentialités</a></li>
+    </ul>
+{% endblock %}
+
+{% block main %}
+    <section id="intro" class="main">
+
+        <h1>Politique de confidentialité</h1>
+        <h2><i>Dernière mise à jour : 01/06/2025</i></h2>
+
+        <p>Merci d’utiliser <b>TheCode</b>.</p>
+
+        <p>
+            Nous accordons une grande importance à la confidentialité de nos utilisateurs. Cette application est conçue
+            pour
+            respecter votre vie privée.
+        </p>
+        <p>
+            C’est pourquoi :
+        </p>
+
+        <p>
+            Nous ne collectons, ne stockons, ni ne partageons aucune donnée personnelle.
+            L'application ne demande aucun accès à vos contacts, caméra, microphone, position ou fichiers.
+            Aucun identifiant personnel ou comportement d'utilisation n’est enregistré ou analysé.
+        <p>
+
+        <h2>Données collectées</h2>
+        <p>Aucune.<br/>
+            L’application ne collecte aucune information personnelle identifiable, ni aucune donnée technique.</p>
+
+        <h2>Partage d'informations</h2>
+        <p>Puisque nous ne collectons aucune donnée, nous ne partageons aucune donnée avec des tiers.</p>
+
+        <h2>Cookies et technologies similaires</h2>
+        <p>L’application ne contient pas de cookies ou technologies similaires.</p>
+
+        <h2>Services tiers</h2>
+        <p>L’application n’utilise aucun service tiers susceptible de collecter des données (par exemple : Google
+            Analytics,
+            Firebase, etc.).</p>
+
+        <h2>Contact</h2>
+        <p>Si vous avez des questions concernant cette politique de confidentialité, vous pouvez nous contacter à :
+            <a style="text-decoration: none" href="mailto:thecodedebonofactory@gmail.com">📧 </a><a
+                    href="mailto:thecodedebonofactory@gmail.com">thecodedebonofactory@gmail.com</a></p>
+    </section>
+
+{% endblock %}
